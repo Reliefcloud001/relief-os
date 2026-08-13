@@ -1,0 +1,37 @@
+relieve/
+│
+├── docker-compose.yml
+├── README.md
+├── requirements.txt
+│
+├── services/
+│   ├── api/
+│   │   ├── main.py
+│   │   ├── routers/
+│   │   │   ├── agent.py
+│   │   │   ├── trust.py
+│   │   │   ├── policy.py
+│   │   │   └── action.py
+│   │   └── models/
+│   │       ├── agent_passport.py
+│   │       ├── trust_graph.py
+│   │       └── evidence.py
+│   │
+│   └── runtime/
+│       ├── agent_runtime.py
+│       ├── tool_registry.py
+│       └── diagnostics.py
+│
+├── db/
+│   ├── schema.sql
+│   └── migrations/
+│       └── V1__init.sql
+│
+├── tests/
+│   ├── test_agent.py
+│   ├── test_trust.py
+│   └── test_policy.py
+│
+└── control_tower/
+    ├── dashboard.py
+    └── metrics.py
